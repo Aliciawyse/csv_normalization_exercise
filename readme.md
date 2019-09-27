@@ -42,10 +42,10 @@ I haven't figured this out yet, but based on the exercise prompt, my guess is th
 
 ### 5. How to run this script
 
-These instructions assume you're on a mac.
+These instructions assume you're on a mac. Also note that this script uses Ruby 2.6.
 
 1. Open a terminal window and clone this repository.
 2. Once that's successfully done, you can navigate to the projects directory on your local machine.
 3. Run the following command: `chmod +x normalize.rb`. This command updates the permissions of the `normalize.rb` file so that you have the power to run the code in the file.
 4. Install dependencies with `bundle install`
-5. Finally, you can run `./normalizer.rb < sample.csv > output.csv` to test this code.
+5. Finally, you can run `./normalizer.rb < sample.csv > output.csv` to test this code. You can run all tests with `bundle exec rspec`.
