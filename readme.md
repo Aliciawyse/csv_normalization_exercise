@@ -38,7 +38,7 @@ I kept running into an `invalid byte sequence in UTF-8 (ArgumentError)` error wh
 
 ### 4. Future Additions
 
-I haven't figured this out yet, but based on the exercise prompt, my guess is that enforcing encoding isn't a necesary step. With more time, I'd continue to research ways to avoid that. I'd also figure out a way to print a warning to stderr and drop the row from output when an unparseable string is found.
+I haven't figured this out yet, but based on the exercise prompt, my guess is that enforcing encoding isn't a necesary step. With more time, I'd continue to research ways to avoid that, if possible. I'd also figure out a way to print a warning to stderr and drop the row from output when an unparseable string is found.
 
 ### 5. How to run this script
 
@@ -48,4 +48,4 @@ These instructions assume you're on a mac. Also note that this script uses Ruby 
 2. Once that's successfully done, you can navigate to the projects directory on your local machine.
 3. Run the following command: `chmod +x normalize.rb`. This command updates the permissions of the `normalize.rb` file so that you have the power to run the code in the file.
 4. Install dependencies with `bundle install`
-5. Finally, you can run `./normalizer.rb < sample.csv > output.csv` to test this code. You can run all tests with `bundle exec rspec`.
+5. Finally, you can run `./normalize.rb < sample.csv > output.csv` to test this code. You can run all tests with `bundle exec rspec`.

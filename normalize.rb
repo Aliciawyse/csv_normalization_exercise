@@ -27,7 +27,7 @@ utf8_csv = CSV.generate do |csv|
     raw_csv.each do |row|
         timestamp = Time.strptime(replace_invalid_utf8(row["Timestamp"]), '%m/%d/%y %I:%M:%S').iso8601
         address = replace_invalid_utf8(row["Address"])
-        zipcode = pad_zipcode(row["ZIP"])
+        zipcode = replace_invalid_utf8(pad_zipcode(row["ZIP"]))
         fullname = replace_invalid_utf8(row["FullName"]).upcase
         foo_duration = row["FooDuration"].split(':').map { |a| a.to_i }.inject(0) { |a, b| a * 60 + b}
         bar_duration = row["BarDuration"].split(':').map { |a| a.to_i }.inject(0) { |a, b| a * 60 + b}
